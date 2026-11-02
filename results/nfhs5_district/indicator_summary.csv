@@ -1,0 +1,20 @@
+indicator_id,indicator,preferred_direction,districts_with_value,equal_district_mean_percent,median_percent,min_percent,min_district,max_percent,max_district,range_percentage_points
+9,Improved sanitation,high,38,49.47,48.75,32.2,Araria,69.0,Rohtas,36.8
+10,Clean cooking fuel,high,38,36.37,39.7,13.4,Madhepura,64.6,Patna,51.2
+15,Women 10+ years of schooling,high,38,28.58,29.15,15.0,Kishanganj,44.4,Munger,29.4
+16,Women married before 18,low,38,41.07,42.6,21.3,Siwan,56.1,Lakhisarai,34.8
+18,Teen mothers or pregnant,low,38,11.19,10.2,2.6,Kaimur (Bhabua),23.5,Saharsa,20.9
+32,Antenatal care in first trimester,high,38,55.04,55.45,26.3,Purnia,73.8,Jamui,47.5
+33,Four or more ANC visits,high,38,25.94,26.6,11.1,Purnia,37.9,Jamui,26.8
+35,IFA consumed 100+ days,high,38,18.45,17.5,9.9,Pashchim Champaran,33.0,Munger,23.1
+38,Mother postnatal care within 2 days,high,38,60.54,58.75,38.5,Saharsa,85.0,Rohtas,46.5
+41,Newborn postnatal care within 2 days,high,38,62.34,62.7,40.8,Saharsa,83.4,Munger,42.6
+42,Institutional births,high,38,77.84,78.35,54.6,Kishanganj,93.2,Munger,38.6
+45,Skilled birth attendance,high,38,80.37,79.45,64.9,Kishanganj,92.3,Munger,27.4
+49,Full vaccination age 12-23m,high,38,72.36,72.0,56.6,Patna,89.7,Aurangabad,33.1
+67,Breastfed within one hour of birth,high,38,32.14,31.1,16.9,Kishanganj,48.5,Kaimur (Bhabua),31.6
+73,Child stunting under 5,low,38,42.59,42.65,34.2,Gopalganj,54.2,Sitamarhi,20.0
+74,Child wasting under 5,low,38,24.25,23.9,13.2,Pashchim Champaran,36.8,Arwal,23.6
+76,Child underweight under 5,low,38,41.73,42.45,29.2,Gopalganj,52.9,Arwal,23.7
+81,Child anaemia age 6-59m,low,38,70.08,69.1,56.1,Gopalganj,81.9,Jamui,25.8
+83,Anaemia among pregnant women,low,38,62.81,62.65,37.3,Sheohar,74.6,Purnia,37.3

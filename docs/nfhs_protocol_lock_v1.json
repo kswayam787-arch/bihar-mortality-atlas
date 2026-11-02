@@ -1,0 +1,13 @@
+{
+  "protocol_id": "BIM-NFHS5-COHORT-OUTCOME-v1.0.0",
+  "frozen_on": "2026-11-02",
+  "status": "FROZEN_BEFORE_AUTHORIZED_MICRODATA",
+  "hash_algorithm": "SHA256",
+  "source_file_sha256": {
+    "docs/nfhs_cohort_protocol_v1.md": "0f869ecb35ba16ae071b465161078f71f9221d443ea575d67cecffd72014d73c",
+    "docs/nfhs_cohort_policy_v1.json": "839840ba51361272d522b4c5f48daa5f4ce197be33e93592ce940e1129ab4028",
+    "src/nfhs_cohort_v1.py": "846c9fe117d16ec624f972b260dc24781b37de34ded8878ab3312f92730bd1e0",
+    "tests/test_nfhs_cohort_v1.py": "f13f6d1bb04dd3112cce3390c1809c5510346a953b21f6e84e19445b4a4a3bb8"
+  },
+  "restriction": "No authorized individual NFHS births loaded; changes require a new version and amendment rationale"
+}

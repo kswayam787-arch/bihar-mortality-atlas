@@ -1,0 +1,4 @@
+district_source_name,round,imr_per_1000_live_births,male_imr_per_1000_live_births,female_imr_per_1000_live_births,source_document,source_docx_table_index,source_docx_row_index,geography_note
+BIHAR,2012-13,48.0,47.0,49.0,NHSRC_AHS_Mortality_Comparison_2010_2013.docx,46,4,AHS 2001 Census-era districts; not 2019-21 NFHS-5 districts
+BIHAR,2011-12,52.0,50.0,53.0,NHSRC_AHS_Mortality_Comparison_2010_2013.docx,46,4,AHS 2001 Census-era districts; not 2019-21 NFHS-5 districts
+BIHAR,2010-11,55.0,53.0,56.0,NHSRC_AHS_Mortality_Comparison_2010_2013.docx,46,4,AHS 2001 Census-era districts; not 2019-21 NFHS-5 districts

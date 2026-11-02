@@ -1,0 +1,88 @@
+TY  - JOUR
+TI  - Leakage-Controlled and Survey-Weighted Machine Learning for Neonatal Mortality Risk Prediction Using NFHS-5 Data
+AU  - Mukherjee, Moumita
+AU  - Ali Khan, Talha
+AU  - Ali, Raja Hashim
+AU  - Cauteruccio, Francesco
+JO  - Healthcare
+PY  - 2026
+DO  - 10.3390/healthcare14142144
+UR  - https://pmc.ncbi.nlm.nih.gov/articles/PMC13410558/
+N1  - PMID: 42512660; PMCID: PMC13410558
+KW  - ML
+KW  - neonatal
+KW  - survey-weighted
+KW  - leakage
+KW  - calibration
+ER  - 
+
+TY  - JOUR
+TI  - Early-Neonatal, Late-Neonatal, Postneonatal, and Child Mortality Rates Across India, 1993-2021
+AU  - Subramanian, S V
+AU  - Kumar, Akhil
+AU  - Pullum, Thomas W
+AU  - Ambade, Mayanka
+AU  - Rajpal, Sunil
+AU  - Kim, Rockli
+JO  - JAMA Network Open
+PY  - 2024
+DO  - 10.1001/jamanetworkopen.2024.10046
+UR  - https://pmc.ncbi.nlm.nih.gov/articles/PMC11087840/
+N1  - PMID: 38728034; PMCID: PMC11087840
+KW  - DHS
+KW  - mortality-estimation
+KW  - age-specific
+KW  - corrected
+ER  - 
+
+TY  - JOUR
+TI  - A population-based study of neonatal mortality and maternal care utilization in the Indian state of Bihar
+AU  - Kumar, G Anil
+AU  - Dandona, Rakhi
+AU  - Chaman, Priyanka
+AU  - Singh, Priyanka
+AU  - Dandona, Lalit
+JO  - BMC Pregnancy and Childbirth
+PY  - 2014
+DO  - 10.1186/1471-2393-14-357
+UR  - https://pmc.ncbi.nlm.nih.gov/articles/PMC4287469/
+N1  - PMID: 25326202; PMCID: PMC4287469
+KW  - Bihar
+KW  - neonatal
+KW  - maternal-care
+KW  - denominator
+ER  - 
+
+TY  - JOUR
+TI  - Implications of the availability and distribution of birth weight on addressing neonatal mortality: population-based assessment from Bihar state of India
+AU  - Kumar, G Anil
+AU  - George, Sibin
+AU  - Akbar, Md
+AU  - Bhattacharya, Debarshi
+AU  - Nanda, Priya
+AU  - Dandona, Lalit
+AU  - Dandona, Rakhi
+JO  - BMJ Open
+PY  - 2022
+DO  - 10.1136/bmjopen-2022-061934
+UR  - https://pmc.ncbi.nlm.nih.gov/articles/PMC9214371/
+N1  - PMID: 35728896; PMCID: PMC9214371
+KW  - Bihar
+KW  - birthweight
+KW  - missingness
+KW  - selection
+ER  - 
+
+TY  - JOUR
+TI  - Application of Machine Learning Algorithms for Predicting Infant Mortality in India: An Analysis of the National Family Health Survey-5, 2019–2021
+AU  - Tripathy, Jaya Prasad
+JO  - Healthcare Informatics Research
+PY  - 2026
+DO  - 10.4258/hir.2026.32.3.232
+UR  - https://pmc.ncbi.nlm.nih.gov/articles/PMC13508809/
+N1  - PMID: 42638361; PMCID: PMC13508809
+KW  - NFHS-5
+KW  - ML
+KW  - infant
+KW  - validation-audit
+ER  - 

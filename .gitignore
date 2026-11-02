@@ -1,0 +1,23 @@
+# Never upload restricted data, secrets or private project state.
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+.env
+.env.*
+*.key
+*.pem
+secrets.toml
+.streamlit/secrets.toml
+data/raw/
+data/processed/
+*.dta
+*.sav
+*.sas7bdat
+*.parquet
+*.db
+*.sqlite
+*.sqlite3
+.DS_Store

@@ -1,0 +1,77 @@
+{
+  "protocol_id": "BIM-NFHS5-COHORT-OUTCOME-v1.0.0",
+  "protocol_status": "FROZEN_BEFORE_AUTHORIZED_MICRODATA",
+  "frozen_on": "2026-11-02",
+  "basis": [
+    "https://www.dhsprogram.com/pubs/pdf/DHSG4/Recode6_DHS_22March2013_DHSG4.pdf",
+    "https://preview.dhsprogram.com/pubs/pdf/DHSG1/Guide_to_DHS_Statistics_DHS-7_v2.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6534308/"
+  ],
+  "geography": "Bihar only: v024 decoded value label 'Bihar' or audited --state-code; never silently infer an unlabeled numeric code",
+  "reference_period": "Interview CMC minus birth CMC, integer 0-59 inclusive; 13-59 for binary complete follow-up",
+  "datasets": {
+    "binary": "Age 13-59 CMC months at interview, outcome death before 12 completed months from b5 and b7; not official period IMR",
+    "monthly_survival": "Age 0-59 CMC months at interview, 0-11 discrete monthly age bins; alive censored conservatively at max(0,v008-b3-1) and endpoint 12 months; deceased before 12 events in b7 month+1",
+    "official_rate": "Separate DHS synthetic-cohort period estimation, survey design and DHS.rates crosscheck; NOT implemented or substituted by model cohort"
+  },
+  "allowed_at_birth_features": [
+    "b4 child sex",
+    "b0 multiple-birth status",
+    "bord birth order",
+    "b11 preceding birth interval",
+    "maternal age at birth from b3-v011"
+  ],
+  "prohibited_primary_features": [
+    "b5",
+    "b6",
+    "b7",
+    "v008",
+    "b3 raw",
+    "post-outcome breastfeeding",
+    "vaccination completion",
+    "postnatal checkups after death",
+    "wealth/education measured at interview without verified temporal validity",
+    "birth weight before availability and without missingness audit"
+  ],
+  "design": {
+    "weight": "v005/1000000",
+    "psu": "v021",
+    "strata": "audit v022/v023 and which encodes actual NFHS stratum",
+    "mother_id": "caseid or v001+v002+v003",
+    "birth_id": "mother_id+bidx",
+    "grouping": "PSU-held-out primary; mother/household never cross partitions",
+    "calibration": "report weighted Brier, calibration slope/intercept and curves",
+    "stratified_ci": "not implemented until strata and replicate methods verified"
+  },
+  "primary_binary": {
+    "event": "b5=0 and b7 in [0,11]",
+    "nonevent": "b5=1 at 13+ CMC months OR b5=0 and b7>=12",
+    "exclude": "missing invalid b5/b7, temporal anomalies and nonpositive weights"
+  },
+  "survival": {
+    "intervals": "0-11 completed age-month bins",
+    "time_event": "b7+1 for deaths in months 0-11",
+    "time_alive_censor": "min(12,max(0,cmc_month_difference-1))",
+    "time_death_after12": "12",
+    "zero_exposure": "keep audit, exclude from month-bin table; never count as 12-month survivors",
+    "precision": "month-level CMC and b7 ages have reporting/imputation uncertainty"
+  },
+  "neonatal": {
+    "definition": "0-27 completed days",
+    "early": "0-2 days",
+    "late": "3-27 days",
+    "positive_only_if": "b6 is verified 100..127 day-coded with 0..27 days",
+    "ambiguous_if": "b7=0 without valid day-coded b6; month 0; infant alive less than 2 CMC months",
+    "negative_if": "reported b6 days>=28 or completed months>=1, OR infant alive >=2 CMC months",
+    "warning": "No exact neonatal or 0-2 day risk using b7=0 alone"
+  },
+  "validation": {
+    "split": "PSU-held-out independent folds; household/mother cannot leak",
+    "model_selection": "predefine baselines and hyperparameter search on development set only",
+    "test": "one untouched final evaluation",
+    "uncertainty": "strata and PSU design-based variance requires independent implementation; weighted ML metrics alone do not suffice",
+    "fairness": "prespecified education, wealth, urban/rural, district only if sample sizes permit; no unverified causal claims"
+  },
+  "frozen_status": "DO NOT alter fixed definitions after seeing observed mortality labels; amendments must be versioned with reason and timestamp",
+  "microdata_status": "AUTHORIZED NFHS-5 individual BR not yet available; no patient-level results claimed"
+}
